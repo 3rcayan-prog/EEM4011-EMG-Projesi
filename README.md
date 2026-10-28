@@ -43,3 +43,14 @@ UCI Machine Learning Repository. https://doi.org/10.24432/C5ZP5C.
 
 ## Lisans
 Bu depodaki analiz kodları **MIT Lisansı** ile açık kaynak olarak paylaşılmıştır.
+
+### Jüri Şekilleri
+
+![Ham 8 Kanal EMG](sekil1.png)
+*Şekil 1: Modelin daha önce hiç görmediği bir test kişisine ait ham 8 kanal EMG sinyalleri ve gerçek hareket etiketleri.*
+
+![RMS Zarfı ve Eşik](sekil2.png)
+*Şekil 2: Aynı test kişisinde hesaplanan 8 kanal RMS zarfı, yalnızca eğitim verisinden elde edilen eşik çizgisi ve tahmin edilen aktif bölgeler.*
+
+![F1 Skorları](sekil3.png)
+*Şekil 3: Veri sızıntısı engellenerek yapılan 5 katlı çapraz doğrulama (GroupKFold) sonucunda yöntemlerin ortalama F1 skoru karşılaştırması.*
