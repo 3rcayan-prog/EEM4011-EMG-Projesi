@@ -24,13 +24,17 @@ en alttaki etiket kutularıyla aynı anda başlayıp başlamadığını görsel 
 2. Depodaki not defterini (`.ipynb` veya `.py`) Google Colab'a yükleyin.
 3. Colab üst menüsünden `Çalışma zamanı (Runtime)` -> `Yeniden başlat ve tümünü çalıştır (Restart and run all)` seçeneğine tıklayın.
 
-## Sonuçlar
+### Proje Sonuçları
 
-| Değerlendirme Metriği | F1 Skoru |
+**Kişi Bazlı Sonuç Tablosu (5-Fold CV Ortalama ± Sapma)**
+
+| Yöntem | F1 Skoru (Test Kişilerinde) |
 | :--- | :--- |
-| Baseline (Sadece Kanal 1 Eşikleme) | 0.781 |
-| Sürekli Aktif (Kıyaslama Amacıyla) | 0.906 |
-| **Geliştirilmiş Yöntem (8 Kanal RMS)** | **1.000** |
+| **Kanal 1 Baseline** | 0.708 ± 0.039 |
+| **Hep Aktif (Dummy)** | 0.910 ± 0.004 |
+| **8 Kanal RMS** | 0.987 ± 0.007 |
+
+**Açıklama:** Önceki aşamada tek bir kayıt üzerinden elde edilen 1.000 F1 skoru, eşiğin hesaplandığı veri ile testin yapıldığı verinin aynı olmasından kaynaklı 'örneklem içi' (in-sample) bir değerken; güncel tablodaki 0.987 ± 0.007 skoru, modelin daha önce hiç görmediği kişilerden oluşan 5 farklı test grubunda sızıntısız olarak elde ettiği gerçek başarıdır.
 
 ## Atıf
 Bu projede kullanılan veri seti için orijinal makale atıfı:
