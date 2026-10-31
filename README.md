@@ -1,4 +1,4 @@
-# EMG Aktiflik Tespiti
+# 8 Kanallı Kol EMG Sinyallerinde Eşikleme ile Aktif / Dinlenme Ayrımı
 
 **Araştırma Sorusu:** 8 kanallı kol EMG verilerinden, kasın aktif olduğu anlar makine öğrenmesi kullanılmadan, basit eşikleme yöntemleriyle tespit edilebilir mi?
 
